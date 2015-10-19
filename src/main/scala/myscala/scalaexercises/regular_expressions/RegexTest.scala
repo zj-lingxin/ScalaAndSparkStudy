@@ -12,10 +12,13 @@ class RegexTest {
     var newStr = regex.replaceAllIn(oldStr, "")
     println("替换后的文本:" + newStr)
 
-    //将"2015/2/12"截取出"2015/2"
-    regex = """\d{4}/\d{1,2}""".r
+    //将"2015/2/12"截取出"2015/2". \d{4}表示4位整数、(/|-)表示是/或者-符号。\d{1,2}表示1到2位整数
+    regex = """\d{4}(/|-)\d{1,2}""".r
     val date = "2015/12/2"
     val yearMonth = regex.findFirstIn(date)
-    println(regex) //"2015/12
+    println(yearMonth) //"2015/12
+  }
+  def main(args: Array[String]) {
+
   }
 }
