@@ -17,6 +17,7 @@ class RegexTest {
     val date = "2015/12/2"
     val yearMonth = regex.findFirstIn(date)
     println(yearMonth) //"2015/12
+
   }
   def main(args: Array[String]) {
 

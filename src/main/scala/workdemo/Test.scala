@@ -1,4 +1,4 @@
-package myspark
+package workdemo
 
 import org.apache.spark._
 

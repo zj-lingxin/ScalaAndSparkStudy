@@ -1,7 +1,7 @@
-package myspark
+package workdemo
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.{SparkConf, SparkContext}
 
 object ElmTest {
   def main(args: Array[String]): Unit = {
